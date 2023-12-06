@@ -1,0 +1,147 @@
+:root {
+    --primary: #FFFFFF;
+    --secondary: #7918DB;
+    --tertiary: #FFDF52;
+    --quadratory: #F5E8FF;
+    --menu: #FBC117;
+    --checkoutsuccess: #2F8D0E;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: var(--secondary);
+}
+
+a {
+    color: #FBC117;
+}
+
+.burger-menu {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.language-en {
+    margin-right: 16px;
+}
+
+.logo-rain {
+    margin-left: 38px; 
+}
+
+.logo-rain img {
+    width: 217px;
+    height: 99px;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+.navbar-icons {
+    display: flex;
+    margin-right: 16px;
+}
+
+.heart-favourite {
+    margin-left: 24px;
+    margin-right: 16px;
+}
+
+.search-glass {
+    margin-right: 16px;
+}
+.bag-checkout {
+    margin-right: 16px;
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    body {
+        width: 100vw;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--primary);
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--menu);
+        font-family: 'Jost', sans-serif;
+    }
+
+    .burger-menu, .language-en {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    .desktop-menu a {
+        font-size: 1.6rem;
+    }
+
+    .desktop-menu:hover {
+        cursor: pointer;
+    }
+
+    .home-page:hover {
+        text-decoration: underline;
+    }
+
+    .men-jacket:hover {
+        text-decoration: underline;
+    }
+
+    .women-jacket:hover {
+        text-decoration: underline;
+    }
+
+    .about-us:hover {
+        text-decoration: underline;
+    }
+
+    .contact-us:hover {
+        text-decoration: underline;
+    }
+
+    .loc-ations:hover {
+        text-decoration: underline;
+    }
+
+    .navbar-icons {
+        display: flex;
+    }
+}
