@@ -33,25 +33,16 @@ a {
     color: #FBC117;
 }
 
-.burger-menu {
-    margin-left: 24px;
-    margin-right: 24px;
-}
-
 .language-en {
-    margin-right: 1rem;
+    margin: 0 1rem 0 1rem; 
     color: var(--menu);
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.logo-rain {
-    margin-left: 1rem; 
-}
-
 .logo-science img {
-    width: 160px;
-    height: 99px;
+    width: 10.625rem;
+    height: 6.25rem;
 }
 
 .desktop-menu {
@@ -60,19 +51,28 @@ a {
 
 .navbar-icons {
     display: flex;
-    margin-right: 16px;
+    margin: 0 1rem 0 1rem;
+    gap: 1.5rem;
+    align-items: center;
 }
 
-.heart-favourite {
-    margin-left: 24px;
-    margin-right: 16px;
+.ticket-logo {
+    display: flex;
+    margin-right: 1rem;
+    margin-top: 1.626rem;
 }
 
-.search-glass {
-    margin-right: 16px;
+.ticket-logo i {
+    width: 1.688rem;
+    height: 1.5rem;
 }
-.bag-checkout {
-    margin-right: 16px;
+
+.ticket-logo a {
+    margin-bottom: 3px;
+}
+
+.menu-hide {
+    margin-right: 1rem;
 }
 
 /* Extra Large (xl) */
@@ -84,14 +84,12 @@ a {
 
     header {
         display: flex;
-        justify-content: space-between;
         width: 100vw;
     }
     
     nav {
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid var(--primary);
     }
 
     a {
@@ -100,51 +98,26 @@ a {
         font-family: 'Jost', sans-serif;
     }
 
-    .burger-menu, .language-en {
+    .language-en {
         display: none;
     }
 
     .desktop-menu {
         display: flex;
-        justify-content: center;
-        gap: 3rem;
-        font-size: 1.3rem;
-        font-weight: 400;
+        gap: 3.5rem;
+        font-weight: bold;
     }
 
     .desktop-menu a {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
-    .desktop-menu:hover {
-        cursor: pointer;
+    .ticket-logo i {
+        font-size: 3.5rem;
     }
 
-    .home-page:hover {
-        text-decoration: underline;
-    }
-
-    .men-jacket:hover {
-        text-decoration: underline;
-    }
-
-    .women-jacket:hover {
-        text-decoration: underline;
-    }
-
-    .about-us:hover {
-        text-decoration: underline;
-    }
-
-    .contact-us:hover {
-        text-decoration: underline;
-    }
-
-    .loc-ations:hover {
-        text-decoration: underline;
-    }
-
-    .navbar-icons {
-        display: flex;
+    .menu-hide i {
+        display: none;
+        margin-top: 1rem;
     }
 }
