@@ -39,15 +39,18 @@ a {
 }
 
 .language-en {
-    margin-right: 16px;
+    margin-right: 1rem;
+    color: var(--menu);
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .logo-rain {
-    margin-left: 38px; 
+    margin-left: 1rem; 
 }
 
-.logo-rain img {
-    width: 217px;
+.logo-science img {
+    width: 160px;
     height: 99px;
 }
 
