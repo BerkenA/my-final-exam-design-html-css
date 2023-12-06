@@ -1,0 +1,159 @@
+:root {
+    --primary: #FFFFFF;
+    --secondary: #7918DB;
+    --tertiary: #FFDF52;
+    --quadratory: #F5E8FF;
+    --menu: #FBC117;
+    --checkoutsuccess: #2F8D0E;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--secondary);
+}
+
+a {
+    color: #FBC117;
+}
+
+.language-en {
+    margin: 0 1rem 0 3rem; 
+    color: var(--menu);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo-science img {
+    width: 10.625rem;
+    height: 6.25rem;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+.navbar-icons {
+    display: flex;
+    margin: 0 2rem 0 3rem;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.ticket-logo {
+    display: flex;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.ticket-logo i {
+    width: 1.688rem;
+    height: 1.5rem;
+    font-size: 2rem;
+}
+
+.ticket-logo a {
+    margin-bottom: 0.188rem;
+}
+
+.menu-hide {
+    margin-right: 1rem;
+}
+/* Medium (m) */
+@media (min-width: 744px) {
+    /* Your styles for the medium breakpoint here */
+    body {
+        width: 100vw;
+    }
+
+    .language-en {
+        font-size: 2rem;
+    }
+
+    .logo-science img {
+        margin-left: 3.5rem; 
+    }
+
+    .ticket-logo i {
+        font-size: 2rem;
+    }
+
+    .navbar-icons {
+        margin: 0 2rem 0 10rem;
+        gap: 2rem;
+    }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    body {
+        width: 100vw;
+    }
+
+    header {
+        display: flex;
+        width: 100vw;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--menu);
+        font-family: 'Jost', sans-serif;
+    }
+
+    .language-en {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: flex;
+        gap: 2rem;
+        font-weight: bold;
+        list-style-type: none;
+        justify-content: center;
+    }
+
+    .desktop-menu a {
+        font-size: 1.6rem;
+    }
+
+    .navbar-icons {
+        margin: 0;
+    }
+
+    .ticket-logo i {
+        font-size: 2.5rem;
+        margin-left: 1.75rem; 
+    }
+
+    .menu-hide i {
+        display: none;
+        margin-top: 1rem;
+    }
+}
