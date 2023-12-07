@@ -5,6 +5,7 @@
     --quadratory: #F5E8FF;
     --menu: #FBC117;
     --checkoutsuccess: #2F8D0E;
+    --reviews: #666666;
 }
 
 * {
@@ -45,6 +46,7 @@ a {
 
 .logo-science img {
     width: 10.625rem;
+    height: 6rem;
     margin-left: 1rem;
 }
 

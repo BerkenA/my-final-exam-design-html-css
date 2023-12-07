@@ -5,6 +5,7 @@
     --quadratory: #F5E8FF;
     --menu: #FBC117;
     --checkoutsuccess: #2F8D0E;
+    --reviews: #666666;
 }
 
 * {
@@ -131,3 +132,29 @@ h1 {
     margin-top: 2rem;
 }
 
+.review-experience {
+    display: flex;
+    justify-content: center;
+}
+
+.review-experience h4 {
+    color: var(--secondary);
+}
+
+.trip-advisor {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 1rem;
+}
+
+.trip-advisor p {
+    color: var(--reviews);
+}
+
+.google-rating {
+    margin: 1rem;
+}
+
+.google-rating p {
+    color: var(--reviews);
+}
