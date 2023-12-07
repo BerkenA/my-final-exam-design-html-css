@@ -121,12 +121,7 @@ body {
     /* Your styles for the extra large breakpoint here */
     body {
         width: 100vw;
-        font-size: 2rem;
-    }
-
-    .section-bottom img {
-        width: 12rem;
-        height: 100%;
+        font-size: 2.5rem;
     }
 
     .menu-sections {
@@ -137,5 +132,19 @@ body {
 
     .menu-sections li {
         margin-top: 3rem;
+    }
+
+    .bottom-footer {
+        flex-direction: row;
+        gap: 3.375rem;
+        align-items: center;
+        padding-right: 3.375rem;
+        height: 20rem;
+    }
+
+    .section-bottom img {
+        width: 35rem;
+        height: 20rem;
+        float: left;
     }
 }
