@@ -1,0 +1,150 @@
+:root {
+    --primary: #FFFFFF;
+    --secondary: #7918DB;
+    --tertiary: #FFDF52;
+    --quaternery: #F5E8FF;
+    --menu: #FBC117;
+    --checkoutsuccess: #2F8D0E;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    font-size: 1.5rem;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.menu-sections {
+    display: flex;
+    padding: 1rem 0 1rem 1rem;
+    color: var(--secondary);
+    background-color: var(--quaternery);
+    flex-direction: column;
+}
+
+.menu-sections ul > li:first-of-type {
+    font-weight: bold;
+}
+
+.top-footer li {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.top-footer a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.middle-footer li {
+    list-style-type: none;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.middle-footer a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.last-footer li {
+    list-style-type: none;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.last-footer a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.section-bottom {
+    background-color: var(--secondary);
+}
+
+.section-bottom img {
+    width: 11rem;
+    height: 7.688rem;
+}
+
+.bottom-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 1rem 2rem 0;
+    height: 18.188rem;
+}
+
+.bottom-footer li {
+    color: var(--primary);
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+/* Medium (m) */
+@media (min-width: 744px) {
+    /* Your styles for the medium breakpoint here */
+    body {
+        width: 100vw;
+        font-size: 1.5rem;
+    }
+
+    .section-bottom img {
+        width: 12rem;
+        height: 100%;
+    }
+
+    .menu-sections {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 3rem;
+    }
+
+    .menu-sections li {
+        margin-top: 3rem;
+    }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    body {
+        width: 100vw;
+        font-size: 2.5rem;
+    }
+
+    .menu-sections {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 3rem;
+    }
+
+    .menu-sections li {
+        margin-top: 3rem;
+    }
+
+    .bottom-footer {
+        flex-direction: row;
+        gap: 3.375rem;
+        align-items: center;
+        padding-right: 3.375rem;
+        height: 20rem;
+    }
+
+    .section-bottom img {
+        width: 35rem;
+        height: 20rem;
+        float: left;
+    }
+}

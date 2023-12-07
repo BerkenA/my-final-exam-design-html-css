@@ -46,6 +46,7 @@ a {
 .logo-science img {
     width: 10.625rem;
     height: 6.25rem;
+    margin-left: 1rem;
 }
 
 .desktop-menu {
@@ -90,7 +91,7 @@ a {
     }
 
     .logo-science img {
-        margin-left: 3.5rem; 
+        margin-left: 2rem;
     }
 
     .ticket-logo i {
@@ -126,14 +127,14 @@ a {
         color: var(--menu);
         font-family: 'Jost', sans-serif;
     }
-
+    
     .language-en {
         display: none;
     }
 
     .desktop-menu {
         display: flex;
-        gap: 2rem;
+        gap: 3.5rem;
         font-weight: bold;
         list-style-type: none;
         justify-content: center;
