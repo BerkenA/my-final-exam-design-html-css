@@ -70,7 +70,7 @@ h1 {
     padding-top: 1rem;
 }
 
-.live-today h4, p {
+.live-today h4, .live-today p {
     color: var(--secondary);
     margin-left: 1rem;
     margin-bottom: 1rem;
@@ -109,7 +109,7 @@ h1 {
     padding-top: 1rem;
 }
 
-.sale-ticket h4, p {
+.sale-ticket h4, .sale-ticket p {
     color: var(--secondary);
     margin: 0 0 1rem 1rem;
 }
@@ -132,6 +132,14 @@ h1 {
     margin-top: 2rem;
 }
 
+.reviews-container {
+    padding: 1rem;
+}
+
+.section-review {
+    margin-bottom: 2rem;
+}
+
 .review-experience {
     display: flex;
     justify-content: center;
@@ -144,15 +152,26 @@ h1 {
 .trip-advisor {
     display: flex;
     flex-direction: column;
-    margin: 1rem 0 0 1rem;
+    margin-top: 1rem;
 }
 
 .trip-advisor p {
     color: var(--reviews);
 }
 
-.google-rating {
-    margin: 1rem;
+.stars-rating {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.my-stars {
+    padding-top: 0.6rem;
+}
+
+.logo-pick {
+    justify-self: flex-start;
 }
 
 .google-rating p {
