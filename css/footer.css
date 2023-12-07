@@ -2,7 +2,7 @@
     --primary: #FFFFFF;
     --secondary: #7918DB;
     --tertiary: #FFDF52;
-    --quadratory: #F5E8FF;
+    --quaternery: #F5E8FF;
     --menu: #FBC117;
     --checkoutsuccess: #2F8D0E;
 }
@@ -16,23 +16,26 @@
 
 body {
     width: 100vw;
-    background-color: var(--quadratory);
+    font-size: 1.5rem;
+    height: 100%;
+    margin: 0;
 }
 
 .menu-sections {
     display: flex;
-    margin-left: 1rem;
-    background-color: var(--quadratory);
+    padding: 1rem 0 1rem 1rem;
     color: var(--secondary);
+    background-color: var(--quaternery);
+}
+
+.top-footer li {
+    list-style-type: none;
+    margin-top: 1rem;
 }
 
 .top-footer a {
     text-decoration: none;
     color: var(--secondary);
-}
-
-.top-footer :nth-child(1) {
-    font-weight: bold;
 }
 
 .top-footer :nth-child(4) {
@@ -43,11 +46,34 @@ body {
     font-weight: bold;
 }
 
-.top-footer li {
-    list-style-type: none;
+.top-footer :nth-child(9) {
+    margin-bottom: 2.5rem;
+}
+
+.visit-museum {
+    font-weight: bold;
+}
+
+.section-bottom {
+    background-color: var(--secondary);
 }
 
 .section-bottom img {
-    width: 13.438rem;
+    width: 12rem;
     height: 6.688rem;
+}
+
+.bottom-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 1rem 2rem 0;
+    height: 18.188rem;
+}
+
+.bottom-footer li {
+    color: var(--primary);
+    list-style-type: none;
+    margin-top: 1rem;
 }
