@@ -17,7 +17,7 @@
 body {
     width: 100vw;
     font-size: 1.5rem;
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -26,6 +26,11 @@ body {
     padding: 1rem 0 1rem 1rem;
     color: var(--secondary);
     background-color: var(--quaternery);
+    flex-direction: column;
+}
+
+.menu-sections ul > li:first-of-type {
+    font-weight: bold;
 }
 
 .top-footer li {
@@ -38,20 +43,29 @@ body {
     color: var(--secondary);
 }
 
-.top-footer :nth-child(4) {
-    font-weight: bold;
+.middle-footer li {
+    list-style-type: none;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--secondary);
 }
 
-.top-footer :nth-child(7) {
-    font-weight: bold;
+.middle-footer a {
+    text-decoration: none;
+    color: var(--secondary);
 }
 
-.top-footer :nth-child(9) {
-    margin-bottom: 2.5rem;
+.last-footer li {
+    list-style-type: none;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--secondary);
+    text-decoration: none;
 }
 
-.visit-museum {
-    font-weight: bold;
+.last-footer a {
+    text-decoration: none;
+    color: var(--secondary);
 }
 
 .section-bottom {
@@ -59,8 +73,8 @@ body {
 }
 
 .section-bottom img {
-    width: 12rem;
-    height: 6.688rem;
+    width: 11rem;
+    height: 7.688rem;
 }
 
 .bottom-footer {
@@ -76,4 +90,52 @@ body {
     color: var(--primary);
     list-style-type: none;
     margin-top: 1rem;
+}
+
+/* Medium (m) */
+@media (min-width: 744px) {
+    /* Your styles for the medium breakpoint here */
+    body {
+        width: 100vw;
+        font-size: 1.5rem;
+    }
+
+    .section-bottom img {
+        width: 12rem;
+        height: 100%;
+    }
+
+    .menu-sections {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 3rem;
+    }
+
+    .menu-sections li {
+        margin-top: 3rem;
+    }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    body {
+        width: 100vw;
+        font-size: 2rem;
+    }
+
+    .section-bottom img {
+        width: 12rem;
+        height: 100%;
+    }
+
+    .menu-sections {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 3rem;
+    }
+
+    .menu-sections li {
+        margin-top: 3rem;
+    }
 }
