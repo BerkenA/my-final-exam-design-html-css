@@ -304,6 +304,10 @@ h1 {
         font-size: 1.625rem;
     }
 
+    .tablet-text {
+        display: block;
+    }
+
     .keep-this button {
         margin-top: 1rem;
     }
@@ -339,7 +343,7 @@ h1 {
     }
 
     .hesh-rating {
-        margin-top: 1rem;
+        margin: 1rem 0 4rem 0;
     }
 
     .news-letter img {
