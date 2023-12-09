@@ -5,6 +5,7 @@
     --quaternery: #F5E8FF;
     --menu: #FBC117;
     --checkoutsuccess: #2F8D0E;
+    --reviews: #666666;
 }
 
 * {
@@ -53,6 +54,10 @@ body {
 .middle-footer a {
     text-decoration: none;
     color: var(--secondary);
+}
+
+.last-footer {
+    margin-bottom: 1rem;
 }
 
 .last-footer li {
@@ -121,7 +126,6 @@ body {
     /* Your styles for the extra large breakpoint here */
     body {
         width: 100vw;
-        font-size: 2.5rem;
     }
 
     .menu-sections {
@@ -132,6 +136,7 @@ body {
 
     .menu-sections li {
         margin-top: 3rem;
+        font-size: 2rem;
     }
 
     .bottom-footer {
@@ -140,6 +145,7 @@ body {
         align-items: center;
         padding-right: 3.375rem;
         height: 20rem;
+        font-size: 2rem;
     }
 
     .section-bottom img {

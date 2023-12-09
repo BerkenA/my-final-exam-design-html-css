@@ -5,6 +5,7 @@
     --quadratory: #F5E8FF;
     --menu: #FBC117;
     --checkoutsuccess: #2F8D0E;
+    --reviews: #666666;
 }
 
 * {
@@ -45,7 +46,7 @@ a {
 
 .logo-science img {
     width: 10.625rem;
-    height: 6.25rem;
+    height: 6rem;
     margin-left: 1rem;
 }
 
@@ -55,21 +56,22 @@ a {
 
 .navbar-icons {
     display: flex;
-    margin: 0 2rem 0 3rem;
-    gap: 1.5rem;
+    margin: 0 1rem 0 3rem;
+    gap: 2rem;
     align-items: center;
 }
 
 .ticket-logo {
     display: flex;
     margin-right: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .ticket-logo i {
     width: 1.688rem;
     height: 1.5rem;
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-bottom: 0.438rem;
 }
 
 .ticket-logo a {
@@ -86,16 +88,12 @@ a {
         width: 100vw;
     }
 
-    .language-en {
-        font-size: 2rem;
-    }
-
     .logo-science img {
         margin-left: 2rem;
     }
 
     .ticket-logo i {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .navbar-icons {
@@ -127,10 +125,6 @@ a {
         color: var(--menu);
         font-family: 'Jost', sans-serif;
     }
-    
-    .language-en {
-        display: none;
-    }
 
     .desktop-menu {
         display: flex;
@@ -141,7 +135,7 @@ a {
     }
 
     .desktop-menu a {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .navbar-icons {
@@ -149,8 +143,8 @@ a {
     }
 
     .ticket-logo i {
-        font-size: 2.5rem;
-        margin-left: 1.75rem; 
+        font-size: 3rem;
+        margin: 0 1.5rem 1.5rem; 
     }
 
     .menu-hide i {
