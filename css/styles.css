@@ -150,6 +150,10 @@ h1 {
     margin-top: 2rem;
 }
 
+.give-location {
+    display: none;
+}
+
 .reviews-container {
     padding: 1rem;
 }
@@ -368,6 +372,7 @@ h1 {
     /* Your styles for the extra large breakpoint here */
     body {
         width: 100vw;
+        font-size: 1.5rem;
     }
 
     .main-image {
@@ -377,6 +382,54 @@ h1 {
     .desktop-image {
         display: block;
         width: 100%;
+    }
+
+    .tickets-buy {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 5rem;
+        margin: 6rem 2.5rem 0 2.5rem;
+    }
+
+    .live-today {
+        margin: 0;
+    }
+
+    .tablet-ticket {
+        display: none;
+    }
+
+    .keep-this button {
+        margin-top: 2rem;
+    }
+
+    .give-location {
+        display: flex;
+        display: flex;
+        background-color: var(--tertiary);
+        flex-direction: column;
+        height: 17.938rem;
+        width: 90%;
+        border-radius: 0.625rem;
+        padding-top: 1rem;
+        color: var(--secondary);
+    }
+
+    .give-location h4, .give-location p {
+        color: var(--secondary);
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .give-location button {
+        width: 16.875rem;
+        height: 2.625rem;
+        background-color: var(--secondary);
+        border-radius: 0.625rem;
+        color: var(--tertiary);
+        font-size: 1.25rem;
+        font-weight: bold;
+        border: none;
     }
 }
 
