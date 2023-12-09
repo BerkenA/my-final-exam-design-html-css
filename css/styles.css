@@ -374,7 +374,7 @@ h1 {
     }
 
     .news-letter img {
-        padding-left: 1rem;
+        padding-left: 2rem;
     }
 
     .news-letter p {
@@ -523,6 +523,11 @@ h1 {
         margin-bottom: 5rem;
     }
 
+    .news-container img {
+        margin-left: 15rem;
+        padding-left: 1rem;
+    }
+
     .news-letter {
         width: 50%;
         height: 100%;
@@ -534,7 +539,7 @@ h1 {
         width: 50%;
         background-image: url(../assets/images/side-picture-home-newsletter-1.jpg);
         background-size: cover;
-        background-position: center;
+        background-position-y: 30%;
         z-index: -5;
     }
 
