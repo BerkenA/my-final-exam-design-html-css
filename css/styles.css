@@ -257,6 +257,10 @@ h1 {
     align-items: center;
 }
 
+.desktop-hide {
+    display: none;
+}
+
 .news-container {
     position: relative;
 }
@@ -380,6 +384,10 @@ h1 {
     .rating-tablet {
         display: block;
     }
+
+    .desktop-hide {
+        display: none;
+    }
 }
 
 /* Extra Large (xl) */
@@ -493,6 +501,7 @@ h1 {
     }
 
     .desktop-hide {
+        display: flex;
         background-color: var(--quadratory);
         border-radius: 0.625rem;
     }
@@ -510,19 +519,23 @@ h1 {
     .news-container {
         display: flex;
         font-size: 2rem;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
     }
 
     .news-letter {
         width: 50%;
         height: 100%;
+        margin: 0;
     }
 
     .side-picture {
         display: flex;
         width: 50%;
-        background-image: url(../assets/images/side-picture-home-newsletter-resized.jpg);
+        background-image: url(../assets/images/side-picture-home-newsletter-1.jpg);
         background-size: cover;
         background-position: center;
+        z-index: -5;
     }
 
     .side-picture img {
