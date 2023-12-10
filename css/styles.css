@@ -450,6 +450,10 @@ h1 {
         padding-bottom: 20rem;
     }
 
+    .sale-ticket p {
+        margin: 0 0 1.2rem 1rem;
+    }
+
     .give-location {
         font-size: 2rem;
         padding-bottom: 20rem;
@@ -553,6 +557,11 @@ h1 {
         width: 50%;
         height: 100%;
         margin: 0;
+    }
+
+    .news-letter p {
+        width: 60%;
+        font-size: 2rem;
     }
 
     .side-picture {
