@@ -28,6 +28,10 @@ h1 {
     justify-content: center;
 }
 
+h4, p {
+    color: var(--secondary);
+}
+
 .main-event img {
     max-height: 100%;
     max-width: 100%;
@@ -35,6 +39,55 @@ h1 {
 
 .welcome-event {
     color: var(--secondary);
+    margin: 0.5rem 1rem 1rem 1rem;
+}
+
+.desktop-text {
+    display: none;
+}
+
+.first-event img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.full-tour {
+    margin: 2rem 1rem 2rem 1rem;
+}
+
+.full-tour button {
+    background-color: var(--tertiary);
+    border-radius: 0.625rem;
+    border: none;
+    width: 16.875rem;
+    height: 2.625rem;
+    color: var(--secondary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.event-buy {
+    display: flex;
+    justify-content: center;
+}
+
+.event-buy button {
+    margin: 2rem;
+}
+
+.second-event img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.second-buy {
+    display: flex;
+    justify-content: center;
+}
+
+.second-buy button {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
 /* Medium (m) */
@@ -42,15 +95,19 @@ h1 {
     /* Your styles for the medium breakpoint here */
     body {
         width: 100vw;
-        font-size: 1.625;
     }
 
     h1 {
         font-size: 2.25rem;
+        margin: 1rem 0 1.5rem 0;
+    }
+
+    h4, p {
+        font-size: 1.625rem;
     }
 
     .main-event {
-        height: 50rem;
+        height: 40rem;
         width: 100rem;
         max-width: 100%;
         max-height: 100%;
@@ -63,6 +120,52 @@ h1 {
     .main-event img {
         display: none;
     }
+
+    .desktop-text {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .first-event {
+        height: 40rem;
+        width: 100rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../assets/images/first-event-tablet.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .first-event img {
+        display: none;
+    }
+
+    .second-event {
+        height: 40rem;
+        width: 100rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../assets/images/last-event-tablet.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .second-event img {
+        display: none;
+    }
+
+    .full-tour button {
+        background-color: var(--tertiary);
+        border-radius: 0.625rem;
+        border: none;
+        width: 29.25rem;
+        height: 2.625rem;
+        color: var(--secondary);
+        font-size: 1.625rem;
+        font-weight: bold;
+    }
 }
 
 /* Extra Large (xl) */
@@ -70,10 +173,16 @@ h1 {
     /* Your styles for the extra large breakpoint here */
     body {
         width: 100vw;
+        font-size: 2rem;
     }
 
     h1 {
         font-size: 4rem;
+    }
+
+    h4, p {
+        font-size: 2rem;
+        color: var(--secondary);
     }
 
     .main-event {
@@ -89,5 +198,32 @@ h1 {
     
     .main-event img {
         display: none;
+    }
+
+    .first-event {
+        height: 40rem;
+        width: 200rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../assets/images/first-event-tablet.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .first-event img {
+        display: none;
+    }
+
+    .full-tour button {
+        background-color: var(--tertiary);
+        border-radius: 0.625rem;
+        border: none;
+        width: 31.25rem;
+        height: 3.25rem;
+        color: var(--secondary);
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 3rem;
     }
 }
