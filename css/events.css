@@ -1,0 +1,80 @@
+:root {
+    --primary: #FFFFFF;
+    --secondary: #7918DB;
+    --tertiary: #FFDF52;
+    --quadratory: #F5E8FF;
+    --menu: #FBC117;
+    --checkoutsuccess: #2F8D0E;
+    --reviews: #666666;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    font-size: 1.5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+}
+
+.main-event img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Medium (m) */
+@media (min-width: 744px) {
+    /* Your styles for the medium breakpoint here */
+    body {
+        width: 100vw;
+    }
+
+    .main-event {
+        height: 50rem;
+        width: 100rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../assets/images/main-picture-events-tablet.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .main-event img {
+        display: none;
+    }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    body {
+        width: 100vw;
+    }
+
+    .main-event {
+        width: 200rem;
+        height: 40rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../assets/images/main-picture-events-desktop-svg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .main-event img {
+        display: none;
+    }
+}
