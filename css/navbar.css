@@ -64,7 +64,7 @@ a {
 .ticket-logo {
     display: flex;
     margin-right: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .ticket-logo i {
@@ -81,6 +81,7 @@ a {
 .menu-hide {
     margin-right: 1rem;
 }
+
 /* Medium (m) */
 @media (min-width: 744px) {
     /* Your styles for the medium breakpoint here */
@@ -139,7 +140,7 @@ a {
     }
 
     .navbar-icons {
-        margin: 0;
+        margin: 1rem 0 0 0;
     }
 
     .ticket-logo i {

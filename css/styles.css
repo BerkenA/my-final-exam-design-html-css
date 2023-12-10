@@ -173,7 +173,6 @@ h1 {
     display: flex;
     justify-content: center;
     color: var(--secondary);
-    font-size: 2.5rem;
 }
 
 .get-guide {
@@ -342,8 +341,42 @@ h1 {
         font-size: 1.625rem;
     }
 
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .main-image {
+        height: 40rem;
+        width: 200rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../assets/images/main-picture-home-tablet.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .main-image img {
+        display: none;
+    }
+
     .tablet-text {
         display: block;
+    }
+
+    .second-image {
+        height: 40rem;
+        width: 200rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../assets/images/second-picture-home-tablet.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .second-image img {
+        display: none;
     }
 
     .keep-this button {
@@ -406,20 +439,20 @@ h1 {
     /* Your styles for the extra large breakpoint here */
     body {
         width: 100vw;
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+
+    .main-image img {
+        display: none;
     }
 
     .welcome-home {
         font-size: 2rem;
-    }
-
-    .main-image {
-        display: none;
-    }
-
-    .desktop-image {
-        display: block;
-        width: 100%;
     }
 
     .desktop-text {
@@ -446,6 +479,10 @@ h1 {
     .sale-ticket {
         font-size: 2rem;
         padding-bottom: 20rem;
+    }
+
+    .sale-ticket p {
+        margin: 0 0 1.2rem 1rem;
     }
 
     .give-location {
@@ -491,6 +528,10 @@ h1 {
         border: none;
     }
 
+    .reviews-container h4 {
+        font-size: 2.5rem;
+    }
+
     .section-review {
         display: flex;
         justify-content: center;
@@ -504,6 +545,10 @@ h1 {
 
     .trip-advisor {
         margin: 0;
+    }
+
+    .trip-advisor p, .google-rating p, .get-guide p {
+        font-size: 2rem;
     }
 
     .get-guide {
@@ -547,6 +592,11 @@ h1 {
         width: 50%;
         height: 100%;
         margin: 0;
+    }
+
+    .news-letter p {
+        width: 60%;
+        font-size: 2rem;
     }
 
     .side-picture {
