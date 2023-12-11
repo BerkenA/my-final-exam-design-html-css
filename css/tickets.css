@@ -266,7 +266,7 @@ input[type="date"]::-o-calendar-picker-indicator {
 
     .main-ticket {
         height: 40rem;
-        width: 200rem;
+        width: 300rem;
         max-width: 100%;
         max-height: 100%;
         background-image: url(../assets/images/tickets-main-picture.svg);
@@ -361,48 +361,36 @@ input[type="date"]::-o-calendar-picker-indicator {
         color: var(--secondary);
     }
 
-    .main-event {
-        width: 200rem;
-        height: 40rem;
-        max-width: 100%;
-        max-height: 100%;
-        background-image: url(../assets/images/main-picture-events-desktop-svg.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    .main-event img {
-        display: none;
+    .desktop-row {
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 2rem;
     }
 
-    .first-event {
-        height: 40rem;
-        width: 200rem;
-        max-width: 100%;
-        max-height: 100%;
-        background-image: url(../assets/images/first-event-tablet.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .tickets-sale {
+        width: 100%;
+        height: 100%;
     }
 
-    .first-event img {
-        display: none;
+    .ticket-picture {
+        width: 100%;
+        height: 100%;
     }
 
-    .full-tour button {
-        background-color: var(--tertiary);
-        border-radius: 0.625rem;
-        border: none;
-        width: 31.25rem;
-        height: 3.25rem;
-        color: var(--secondary);
+    .ticket-picture p {
         font-size: 2rem;
-        font-weight: bold;
-        margin-top: 3rem;
+    }
+
+    .second-ticket {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .second-picture {
+        height: 100%;
+        width: 100%;
     }
 }
-
-
-
