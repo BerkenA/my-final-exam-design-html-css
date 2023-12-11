@@ -90,14 +90,39 @@
                 </p>
             </div>
         </section>
-        <div class="tickets-sale">
-            <div>
-                <img src="assets/images/second-picture-tickets.jpg" alt="">
-            </div>
-        </div>
         <section>
-
+            <div class="tickets-sale">
+                <div class="ticket-picture">
+                    <h4>
+                        Young Explorer's Pass:
+                    </h4>
+                    <img src="assets/images/second-picture-tickets.jpg" alt="picture of two tickets">
+                    <p>
+                        Ignite curiosity with our Young Explorer's Pass. Kids aged 7-15 enjoy unlimited access to all exhibits, ensuring a day filled with hands-on science exploration and interactive fun.
+                    </p>
+                    <form class="ticket-form" method="post">
+                        <div class="form-group">
+                            <label for="price"></label>
+                            <input type="text" id="price" name="price" placeholder="500 NOK">
+                            <label for="tickets"></label>
+                            <input type="number" id="tickets" name="tickets" placeholder="1" min="1" max="10">
+                        </div>
+                
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Name*">
+                
+                        <label for="phone"></label>
+                        <input type="text" id="phone" name="phone" placeholder="Phone*">
+                
+                        <label for="date"></label>
+                        <input type="date" id="date" name="date">
+                
+                        <button type="submit">Book Now</button>
+                    </form>
+                </div>
+            </div>
         </section>
+
     </main>
     <footer>
         <!-- This is my top footer -->

@@ -26,6 +26,7 @@ h1 {
     color: var(--secondary);
     display: flex;
     justify-content: center;
+    font-size: 2rem;
 }
 
 .main-ticket img {
@@ -42,11 +43,69 @@ h1 {
     font-weight: bold;
 }
 
-.ticket-sale {
+.tickets-sale {
+    display: flex;
+    justify-content: center;
+}
+
+.tickets-sale p {
+    color: var(--secondary);
+    font-size: 1.5rem;
+    margin: 1rem 2.5rem 0 2.5rem;
+}
+
+.ticket-picture {
+    display: flex;
     background-color: var(--tertiary);
+    flex-direction: column;
+    align-items: center;
+    height: 57.25rem;
+    width: 21.875rem;
+    border-radius: 0.625rem;
+}
+
+.ticket-picture h4 {
+    font-size: 1.625rem;
+    margin-top: 1rem;
+    color: var(--secondary);
 }
 
 .ticket-picture img {
     max-width: 100%;
     max-width: 100%;
+    height: 14.875rem;
+    width: 14.25rem;
+    border-radius: 0.625rem;
+    margin-top: 1rem;
+}
+
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ticket-form input {
+    background-color: var(--secondary);
+    border-radius: 0.625rem;
+    color: var(--tertiary);
+    font-size: 2rem;
+    max-width: 100%;
+    border: none;
+    color: var(--tertiary);
+    padding: 0.5rem 1rem;
+}
+
+
+
+.ticket-form ::placeholder {
+    color: var(--tertiary);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator, input[type="date"]::-moz-calendar-picker-indicator, input[type="date"]::-o-calendar-picker-indicator {
+    opacity: 1;
+    background-image: url(../assets/images/logos/calendar-days-regular.svg);
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
 }
