@@ -342,6 +342,7 @@ input[type="date"]::-o-calendar-picker-indicator {
         background-position-y: 60%;
         background-repeat: no-repeat;
         object-fit: cover;
+    }
 }
 
 /* Extra Large (xl) */
