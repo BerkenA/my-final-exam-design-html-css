@@ -17,9 +17,12 @@
 
 body {
     width: 100vw;
-    font-size: 1.5rem;
     min-height: 100vh;
     margin: 0;
+}
+
+li, a {
+    font-size: 1.5rem;
 }
 
 .menu-sections {
@@ -106,7 +109,10 @@ body {
     /* Your styles for the medium breakpoint here */
     body {
         width: 100vw;
-        font-size: 1.5rem;
+    }
+
+    li, a {
+        font-size: 1.625rem;
     }
 
     .section-bottom img {
@@ -130,6 +136,10 @@ body {
     /* Your styles for the extra large breakpoint here */
     body {
         width: 100vw;
+    }
+
+    li, a {
+        font-size: 2rem;
     }
 
     .menu-sections {

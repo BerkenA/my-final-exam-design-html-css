@@ -380,7 +380,16 @@ h1 {
     }
 
     .keep-this button {
+        font-size: 1.625rem;
         margin-top: 1rem;
+    }
+
+    .live-today button {
+        font-size: 1.625rem;
+    }
+
+    .reviews-container h4 {
+        font-size: 2rem;
     }
 
     .tablet-ticket {
@@ -415,6 +424,10 @@ h1 {
 
     .hesh-rating {
         margin: 1rem 0 4rem 0;
+    }
+
+    .review-buy button {
+        font-size: 1.625rem;
     }
 
     .news-letter img {
@@ -453,6 +466,7 @@ h1 {
 
     .welcome-home {
         font-size: 2rem;
+        margin-bottom: 2rem;
     }
 
     .desktop-text {
@@ -482,7 +496,7 @@ h1 {
     }
 
     .sale-ticket p {
-        margin: 0 0 1.2rem 1rem;
+        margin: 0 0 0 1rem;
     }
 
     .give-location {
@@ -495,8 +509,8 @@ h1 {
     }
 
     .keep-this button {
-        margin-top: 2rem;
         font-size: 2rem;
+        margin-top: 3rem;
     }
 
     .give-location {

@@ -121,7 +121,7 @@ h4, p {
     }
 
     .main-event {
-        height: 40rem;
+        height: 30rem;
         width: 100rem;
         max-width: 100%;
         max-height: 100%;
@@ -141,7 +141,7 @@ h4, p {
     }
 
     .first-event {
-        height: 40rem;
+        height: 30rem;
         width: 100rem;
         max-width: 100%;
         max-height: 100%;
@@ -156,7 +156,7 @@ h4, p {
     }
 
     .second-event {
-        height: 40rem;
+        height: 30rem;
         width: 200rem;
         max-width: 100%;
         max-height: 100%;
@@ -171,7 +171,7 @@ h4, p {
     }
 
     .third-event {
-        height: 40rem;
+        height: 30rem;
         width: 200rem;
         max-width: 100%;
         max-height: 100%;
@@ -226,11 +226,7 @@ h4, p {
     .main-event {
         width: 200rem;
         height: 40rem;
-        max-width: 100%;
-        max-height: 100%;
-        background-image: url(../assets/images/first-picture-school-trips-tablet.svg);
         background-position-y: 30%;
-        background-repeat: no-repeat;
         background-size: cover;
     }
     
@@ -241,16 +237,18 @@ h4, p {
     .first-event {
         height: 40rem;
         width: 200rem;
-        max-width: 100%;
-        max-height: 100%;
-        background-image: url(../assets/images/second-picture-school-trips-tablet.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .first-event img {
         display: none;
+    }
+
+    .second-event {
+        height: 40rem;
+    }
+
+    .third-event {
+        height: 40rem;
     }
 
     .full-tour button {

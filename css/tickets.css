@@ -1,0 +1,397 @@
+:root {
+    --primary: #FFFFFF;
+    --secondary: #7918DB;
+    --tertiary: #FFDF52;
+    --quadratory: #F5E8FF;
+    --menu: #FBC117;
+    --checkoutsuccess: #2F8D0E;
+    --reviews: #666666;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    font-size: 1.5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.main-ticket img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.welcome-ticket h4, .welcome-ticket p {
+    color: var(--secondary);
+    margin: 2rem 1rem 2rem 1rem;
+}
+
+.desktop-text {
+    font-weight: bold;
+}
+
+.tickets-sale {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.tickets-sale p {
+    color: var(--secondary);
+    font-size: 1.5rem;
+    margin: 1rem 2rem 0 2rem;
+}
+
+.ticket-picture {
+    display: flex;
+    background-color: var(--tertiary);
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    border-radius: 0.625rem;
+}
+
+.ticket-picture h4 {
+    font-size: 1.625rem;
+    margin-top: 1rem;
+    color: var(--secondary);
+}
+
+.ticket-picture img {
+    max-width: 100%;
+    max-width: 100%;
+    height: 15.875rem;
+    width: 17.25rem;
+    border-radius: 0.625rem;
+    margin-top: 1rem;
+}
+
+.ticket-picture p {
+        display: flex;
+        gap: 1rem;
+}
+
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.ticket-form a {
+    text-decoration: none;
+    color: var(--tertiary);
+    font-size: 1.25rem;
+}
+
+.ticket-form input, .ticket-form button {
+    background-color: var(--secondary);
+    border-radius: 0.625rem;
+    color: var(--tertiary);
+    font-size: 1.25rem;
+    max-width: 100%;
+    border: none;
+    color: var(--tertiary);
+    padding: 0.5rem 1rem;
+}
+
+.ticket-form select {
+    background: var(--secondary);
+    border-radius: 0.625rem;
+    border: none;
+    height: 2.8rem;
+    color: var(--tertiary);
+    font-size: 1.25rem;
+    padding-left: 1rem;
+}
+
+.ticket-form button {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.ticket-form ::placeholder {
+    color: var(--tertiary);
+}
+
+.calender-type input[type="date"]::-webkit-calendar-picker-indicator {
+    background-image: url(../assets/images/logos/calendar-days-regular.svg);
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+input[type="date"]::-moz-calendar-picker-indicator {
+    background-image: url(../assets/images/logos/calendar-days-regular.svg);
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+input[type="date"]::-o-calendar-picker-indicator {
+    background-image: url(../assets/images/logos/calendar-days-regular.svg);
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.second-ticket {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.second-ticket p {
+    color: var(--secondary);
+    margin: 1rem 2rem 0 2rem;
+}
+
+.second-picture {
+    display: flex;
+    background-color: var(--quadratory);
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    border-radius: 0.625rem;
+}
+
+.second-picture h4 {
+    font-size: 1.625rem;
+    margin-top: 1rem;
+    color: var(--secondary);
+}
+
+.second-picture img {
+    max-width: 100%;
+    max-width: 100%;
+    height: 15.875rem;
+    width: 17.25rem;
+    border-radius: 0.625rem;
+    margin-top: 1rem;
+}
+
+.second-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.second-form select {
+    background: var(--tertiary);
+    border-radius: 0.625rem;
+    border: none;
+    height: 2.8rem;
+    color: var(--secondary);
+    font-size: 1.25rem;
+    padding-left: 1rem;
+}
+
+.second-form a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 1.25rem;
+}
+
+.second-form input, .second-form button {
+    background-color: var(--tertiary);
+    border-radius: 0.625rem;
+    color: var(--secondary);
+    font-size: 1.25rem;
+    max-width: 100%;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.second-form button {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.second-form ::placeholder {
+    color: var(--secondary);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-image: url(../assets/images/logos/calendar-days-regular-purple.svg);
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+input[type="date"]::-moz-calendar-picker-indicator {
+    background-image: url(../assets/images/logos/calendar-days-regular-purple.svg);
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+input[type="date"]::-o-calendar-picker-indicator {
+    background-image: url(../assets/images/logos/calendar-days-regular-purple.svg);
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Medium (m) */
+@media (min-width: 744px) {
+    /* Your styles for the medium breakpoint here */
+    body {
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        margin: 1rem 0 1.5rem 0;
+    }
+
+    h4, p {
+        font-size: 1.625rem;
+    }
+
+    .main-ticket {
+        height: 40rem;
+        width: 300rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../assets/images/tickets-main-picture.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .main-ticket img {
+        display: none;
+    }
+
+    .desktop-text {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .ticket-picture img {
+        background-image: url(../assets/images/main-picture-home-tickets.svg);
+        width: 85%;
+        max-width: 100%;
+        max-height: 100%;
+        background-position-y: 60%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+
+    .ticket-picture p {
+        display: flex;
+        gap: 1rem;
+        width: 85%;
+    }
+
+    .form-group {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .form-group label {
+        display: none;
+    }
+
+    .form-group select {
+        flex-grow: 1;
+    }
+
+    .ticket-form {
+        display: flex;
+        gap: 1rem;
+        width: 85%;
+    }
+
+    .ticket-form label {
+        display: none;
+    }
+
+    .ticket-form select {
+        flex-grow: 1;
+    }
+
+    .second-ticket p {
+        width: 85%;
+    }
+
+    .second-form {
+        width: 85%;
+    }
+
+    .second-picture img {
+        width: 85%;
+        max-width: 100%;
+        max-height: 100%;
+        background-position-y: 60%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    body {
+        width: 100vw;
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h4, p {
+        font-size: 2rem;
+        color: var(--secondary);
+    }
+
+    .desktop-row {
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 2rem;
+    }
+
+    .tickets-sale {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ticket-picture {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ticket-picture p {
+        font-size: 2rem;
+    }
+
+    .second-ticket {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .second-picture {
+        height: 100%;
+        width: 100%;
+    }
+}
