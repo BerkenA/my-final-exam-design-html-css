@@ -1,0 +1,52 @@
+:root {
+    --primary: #FFFFFF;
+    --secondary: #7918DB;
+    --tertiary: #FFDF52;
+    --quadratory: #F5E8FF;
+    --menu: #FBC117;
+    --checkoutsuccess: #2F8D0E;
+    --reviews: #666666;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    font-size: 1.5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+}
+
+.main-ticket img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.welcome-ticket h4, .welcome-ticket p {
+    color: var(--secondary);
+    margin: 2rem 1rem 2rem 1rem;
+}
+
+.desktop-text {
+    font-weight: bold;
+}
+
+.ticket-sale {
+    background-color: var(--tertiary);
+}
+
+.ticket-picture img {
+    max-width: 100%;
+    max-width: 100%;
+}
