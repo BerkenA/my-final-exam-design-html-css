@@ -60,8 +60,8 @@ h1 {
     background-color: var(--tertiary);
     flex-direction: column;
     align-items: center;
-    height: 57.25rem;
-    width: 21.875rem;
+    height: 80%;
+    width: 80%;
     border-radius: 0.625rem;
 }
 
@@ -74,8 +74,8 @@ h1 {
 .ticket-picture img {
     max-width: 100%;
     max-width: 100%;
-    height: 14.875rem;
-    width: 14.25rem;
+    height: 15.875rem;
+    width: 17.25rem;
     border-radius: 0.625rem;
     margin-top: 1rem;
 }
@@ -104,6 +104,16 @@ h1 {
     padding: 0.5rem 1rem;
 }
 
+.ticket-form select {
+    background: var(--secondary);
+    border-radius: 0.625rem;
+    border: none;
+    height: 2.8rem;
+    color: var(--tertiary);
+    font-size: 1.25rem;
+    padding-left: 1rem;
+}
+
 .ticket-form button {
     margin-top: 0.5rem;
     font-weight: bold;
@@ -113,8 +123,7 @@ h1 {
     color: var(--tertiary);
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 1;
+.calender-type input[type="date"]::-webkit-calendar-picker-indicator {
     background-image: url(../assets/images/logos/calendar-days-regular.svg);
     display: block;
     width: 1.25rem;
@@ -122,7 +131,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 input[type="date"]::-moz-calendar-picker-indicator {
-    opacity: 1;
     background-image: url(../assets/images/logos/calendar-days-regular.svg);
     display: block;
     width: 1.25rem;
@@ -130,7 +138,6 @@ input[type="date"]::-moz-calendar-picker-indicator {
 }
 
 input[type="date"]::-o-calendar-picker-indicator {
-    opacity: 1;
     background-image: url(../assets/images/logos/calendar-days-regular.svg);
     display: block;
     width: 1.25rem;
@@ -154,8 +161,8 @@ input[type="date"]::-o-calendar-picker-indicator {
     background-color: var(--quadratory);
     flex-direction: column;
     align-items: center;
-    height: 57.25rem;
-    width: 21.875rem;
+    height: 80%;
+    width: 80%;
     border-radius: 0.625rem;
 }
 
@@ -168,8 +175,8 @@ input[type="date"]::-o-calendar-picker-indicator {
 .second-picture img {
     max-width: 100%;
     max-width: 100%;
-    height: 14.875rem;
-    width: 14.25rem;
+    height: 15.875rem;
+    width: 17.25rem;
     border-radius: 0.625rem;
     margin-top: 1rem;
 }
@@ -179,6 +186,16 @@ input[type="date"]::-o-calendar-picker-indicator {
     flex-direction: column;
     gap: 0.5rem;
     margin: 1rem 0;
+}
+
+.second-form select {
+    background: var(--tertiary);
+    border-radius: 0.625rem;
+    border: none;
+    height: 2.8rem;
+    color: var(--secondary);
+    font-size: 1.25rem;
+    padding-left: 1rem;
 }
 
 .second-form a {
@@ -207,24 +224,21 @@ input[type="date"]::-o-calendar-picker-indicator {
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 1;
-    background-image: url(../assets/images/logos/calendar-days-regular.svg);
+    background-image: url(../assets/images/logos/calendar-days-regular-purple.svg);
     display: block;
     width: 1.25rem;
     height: 1.25rem;
 }
 
 input[type="date"]::-moz-calendar-picker-indicator {
-    opacity: 1;
-    background-image: url(../assets/images/logos/calendar-days-regular.svg);
+    background-image: url(../assets/images/logos/calendar-days-regular-purple.svg);
     display: block;
     width: 1.25rem;
     height: 1.25rem;
 }
 
 input[type="date"]::-o-calendar-picker-indicator {
-    opacity: 1;
-    background-image: url(../assets/images/logos/calendar-days-regular.svg);
+    background-image: url(../assets/images/logos/calendar-days-regular-purple.svg);
     display: block;
     width: 1.25rem;
     height: 1.25rem;
