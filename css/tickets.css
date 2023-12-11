@@ -152,7 +152,6 @@ input[type="date"]::-o-calendar-picker-indicator {
 
 .second-ticket p {
     color: var(--secondary);
-    font-size: 1.5rem;
     margin: 1rem 2rem 0 2rem;
 }
 
@@ -242,6 +241,138 @@ input[type="date"]::-o-calendar-picker-indicator {
     display: block;
     width: 1.25rem;
     height: 1.25rem;
+}
+
+/* Medium (m) */
+@media (min-width: 744px) {
+    /* Your styles for the medium breakpoint here */
+    body {
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        margin: 1rem 0 1.5rem 0;
+    }
+
+    h4, p {
+        font-size: 1.625rem;
+    }
+
+    .main-ticket {
+        height: 40rem;
+        width: 200rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../assets/images/tickets-main-picture.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .main-ticket img {
+        display: none;
+    }
+
+    .desktop-text {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .form-group {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .form-group label {
+        display: none;
+    }
+
+    .form-group select {
+        flex-grow: 1;
+    }
+
+    .ticket-form {
+        display: flex;
+        gap: 1rem;
+        width: 85%;
+    }
+
+    .ticket-form label {
+        display: none;
+    }
+
+    .ticket-form select {
+        flex-grow: 1;
+    }
+
+    .second-ticket p {
+        width: 85%;
+    }
+
+    .second-form {
+        width: 85%;
+    }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    body {
+        width: 100vw;
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h4, p {
+        font-size: 2rem;
+        color: var(--secondary);
+    }
+
+    .main-event {
+        width: 200rem;
+        height: 40rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../assets/images/main-picture-events-desktop-svg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .main-event img {
+        display: none;
+    }
+
+    .first-event {
+        height: 40rem;
+        width: 200rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../assets/images/first-event-tablet.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .first-event img {
+        display: none;
+    }
+
+    .full-tour button {
+        background-color: var(--tertiary);
+        border-radius: 0.625rem;
+        border: none;
+        width: 31.25rem;
+        height: 3.25rem;
+        color: var(--secondary);
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 3rem;
+    }
 }
 
 
