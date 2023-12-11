@@ -80,6 +80,11 @@ h1 {
     margin-top: 1rem;
 }
 
+.ticket-picture p {
+        display: flex;
+        gap: 1rem;
+}
+
 .ticket-form {
     display: flex;
     flex-direction: column;
@@ -279,6 +284,22 @@ input[type="date"]::-o-calendar-picker-indicator {
         margin-top: 1rem;
     }
 
+    .ticket-picture img {
+        background-image: url(../assets/images/main-picture-home-tickets.svg);
+        width: 85%;
+        max-width: 100%;
+        max-height: 100%;
+        background-position-y: 60%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+
+    .ticket-picture p {
+        display: flex;
+        gap: 1rem;
+        width: 85%;
+    }
+
     .form-group {
         display: flex;
         gap: 1rem;
@@ -313,6 +334,14 @@ input[type="date"]::-o-calendar-picker-indicator {
     .second-form {
         width: 85%;
     }
+
+    .second-picture img {
+        width: 85%;
+        max-width: 100%;
+        max-height: 100%;
+        background-position-y: 60%;
+        background-repeat: no-repeat;
+        object-fit: cover;
 }
 
 /* Extra Large (xl) */
