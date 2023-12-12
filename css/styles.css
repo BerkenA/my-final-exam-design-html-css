@@ -479,6 +479,12 @@ footer a:hover {
         width: 23.375rem;
     }
 
+    #email::placeholder {
+        color: var(--secondary);
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+
     .rating-tablet {
         display: block;
     }
@@ -653,6 +659,12 @@ footer a:hover {
     .news-letter p {
         width: 60%;
         font-size: 2rem;
+    }
+
+    #email::placeholder {
+        color: var(--secondary);
+        font-size: 1.5rem;
+        padding-left: 1rem;
     }
 
     .side-picture {
