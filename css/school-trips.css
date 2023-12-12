@@ -32,6 +32,25 @@ h4, p {
     color: var(--secondary);
 }
 
+footer li:hover {
+    color: #FBC117;
+}
+
+footer a:hover {
+    color: var(--menu);
+}
+
+.desktop-menu a:hover {
+    color: var(--tertiary);
+}
+
+.desktop-menu :nth-child(3) {
+    text-decoration: underline;
+    color: var(--menu);
+    text-underline-offset: 0.5rem;
+    text-decoration-style: bold;
+}
+
 .main-event img {
     max-height: 100%;
     max-width: 100%;

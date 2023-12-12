@@ -28,6 +28,25 @@ h1 {
     justify-content: center;
 }
 
+footer li:hover {
+    color: #FBC117;
+}
+
+footer a:hover {
+    color: var(--menu);
+}
+
+.desktop-menu a:hover {
+    color: var(--tertiary);
+}
+
+.home-select {
+    text-decoration: underline;
+    color: var(--menu);
+    text-underline-offset: 0.5rem;
+    text-decoration-style: bold;
+}
+
 .main-image {
     display: block;
     width: 100%;
@@ -311,8 +330,12 @@ h1 {
 }
 
 .your-email {
-    margin-left: 1.5rem;
     width: 90%;
+}
+
+.news-logo {
+    display: flex;
+    justify-content: flex-end;
 }
 
 #email {
@@ -321,12 +344,26 @@ h1 {
     border-radius: 0.625rem;
     border: 0;
     margin-top: 1rem;
+    margin-right: -1rem;
 }
 
 #email::placeholder {
     color: var(--secondary);
     font-size: 1.25rem;
     padding-left: 1rem;
+}
+
+.your-email button {
+    background-color: var(--primary);
+    border: none;
+    height: 0;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.new-logo {
+    display: flex;
 }
 
 .side-picture {
@@ -430,12 +467,22 @@ h1 {
         font-size: 1.625rem;
     }
 
+    .news-letter {
+        height: 20.313rem;
+    }
+
     .news-letter img {
         padding-left: 2rem;
     }
 
     .news-letter p {
         width: 23.375rem;
+    }
+
+    #email::placeholder {
+        color: var(--secondary);
+        font-size: 1.5rem;
+        padding-left: 1rem;
     }
 
     .rating-tablet {
@@ -606,11 +653,18 @@ h1 {
         width: 50%;
         height: 100%;
         margin: 0;
+        padding-bottom: 2rem;
     }
 
     .news-letter p {
         width: 60%;
         font-size: 2rem;
+    }
+
+    #email::placeholder {
+        color: var(--secondary);
+        font-size: 1.5rem;
+        padding-left: 1rem;
     }
 
     .side-picture {
