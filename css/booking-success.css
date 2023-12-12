@@ -1,0 +1,49 @@
+:root {
+    --primary: #FFFFFF;
+    --secondary: #7918DB;
+    --tertiary: #FFDF52;
+    --quadratory: #F5E8FF;
+    --menu: #FBC117;
+    --checkoutsuccess: #2F8D0E;
+    --reviews: #666666;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    font-size: 1.5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+footer li:hover {
+    color: #FBC117;
+}
+
+footer a:hover {
+    color: var(--menu);
+}
+
+.desktop-menu a:hover {
+    color: var(--tertiary);
+}
+
+.desktop-menu :nth-child(5) {
+    text-decoration: underline;
+    color: var(--menu);
+    text-underline-offset: 0.5rem;
+    text-decoration-style: bold;
+}
