@@ -29,6 +29,13 @@ h1 {
     font-size: 2rem;
 }
 
+.desktop-menu :nth-child(4) {
+    text-decoration: underline;
+    color: var(--menu);
+    text-underline-offset: 0.5rem;
+    text-decoration-style: bold;
+}
+
 .main-ticket img {
     max-width: 100%;
     max-height: 100%;
@@ -323,8 +330,14 @@ input[type="date"]::-o-calendar-picker-indicator {
         display: none;
     }
 
+    .ticket-form input, .ticket-form button, .ticket-form a {
+        font-size: 2rem;
+    }
+
     .ticket-form select {
         flex-grow: 1;
+        font-size: 2rem;
+        height: 4rem;
     }
 
     .second-ticket p {
@@ -333,6 +346,15 @@ input[type="date"]::-o-calendar-picker-indicator {
 
     .second-form {
         width: 85%;
+    }
+
+    .second-form input, .second-form button, .second-form a {
+        font-size: 2rem;
+    }
+
+    .second-form select {
+        font-size: 2rem;
+        height: 4rem;
     }
 
     .second-picture img {
@@ -368,6 +390,7 @@ input[type="date"]::-o-calendar-picker-indicator {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
         grid-column-gap: 2rem;
+        margin-bottom: 2.5rem;
     }
 
     .tickets-sale {
@@ -384,6 +407,15 @@ input[type="date"]::-o-calendar-picker-indicator {
         font-size: 2rem;
     }
 
+    .ticket-form input, .ticket-form button, .ticket-form a {
+        font-size: 2rem;
+    }
+
+    .ticket-form select {
+        font-size: 2rem;
+        height: 100%;
+    }
+
     .second-ticket {
         height: 100%;
         width: 100%;
@@ -393,5 +425,18 @@ input[type="date"]::-o-calendar-picker-indicator {
     .second-picture {
         height: 100%;
         width: 100%;
+    }
+
+    .second-picture h4, .ticket-picture h4 {
+        font-size: 2rem;
+    }
+
+    .second-form input, .second-form button, .second-form a {
+        font-size: 2rem;
+    }
+
+    .second-form select {
+        font-size: 2rem;
+        height: 100%;
     }
 }

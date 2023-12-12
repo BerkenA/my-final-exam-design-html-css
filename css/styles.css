@@ -28,6 +28,17 @@ h1 {
     justify-content: center;
 }
 
+.desktop-menu a:hover {
+    color: var(--tertiary);
+}
+
+.home-select {
+    text-decoration: underline;
+    color: var(--menu);
+    text-underline-offset: 0.5rem;
+    text-decoration-style: bold;
+}
+
 .main-image {
     display: block;
     width: 100%;
@@ -428,6 +439,10 @@ h1 {
 
     .review-buy button {
         font-size: 1.625rem;
+    }
+
+    .news-letter {
+        height: 20.313rem;
     }
 
     .news-letter img {
