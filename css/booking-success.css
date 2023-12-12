@@ -17,16 +17,9 @@
 
 body {
     width: 100vw;
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     overflow-y: scroll;
     overflow-x: hidden;
-}
-
-h1 {
-    color: var(--secondary);
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
 }
 
 footer li:hover {
@@ -41,9 +34,35 @@ footer a:hover {
     color: var(--tertiary);
 }
 
-.desktop-menu :nth-child(5) {
-    text-decoration: underline;
-    color: var(--menu);
-    text-underline-offset: 0.5rem;
-    text-decoration-style: bold;
+.booking-success {
+    display: flex;
+    justify-content: center;
+    background-color: var(--quadratory);
+    text-align: center;
+    color: var(--secondary);
+    padding-top: 2rem;
+}
+
+.order-confirm {
+    padding-top: 3.5rem;
+    background-color: var(--quadratory);
+    text-align: center;
+    color: var(--secondary);
+    padding-bottom: 3.5rem;
+    border-bottom: 0.063rem solid var(--secondary);
+}
+
+.order-confirm h3 {
+    padding-bottom: 3.5rem;
+}
+
+.order-confirm button {
+    width: 18.75rem;
+    height: 3.25rem;
+    background-color: var(--tertiary);
+    border: none;
+    color: var(--secondary);
+    font-size: 1.625rem;
+    font-weight: bold;
+    border-radius: 0.625rem;
 }
