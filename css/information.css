@@ -110,16 +110,103 @@ footer a:hover {
     border: none;
     border-radius: 0.625rem;
     height: 2.625rem;
+    margin-bottom: 5rem;
 }
 
 .user-terms {
     display: flex;
+    gap: 1rem;
 }
 
 .user-terms input {
     display: flex;
-    align-self: flex-start;
-    justify-self: center;
+    align-items: flex-start;
+    justify-content: center;
     height: 2rem;
     margin-bottom: 1rem;
+    border-radius: 0.625rem;
+    color: var(--secondary);
+}
+
+.user-terms label {
+    font-size: 1rem;
+    padding-top: 0.3rem;
+    color: var(--secondary);
+}
+
+/* Medium (m) */
+@media (min-width: 744px) {
+    /* Your styles for the medium breakpoint here */
+    body {
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        margin: 1rem 0 1.5rem 0;
+    }
+
+    h4, p {
+        font-size: 1.625rem;
+    }
+
+    .information-image img {
+        display: none;
+    }
+
+    .information-image {
+        height: 40rem;
+        width: 200rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../assets/images/only-picture-info-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    body {
+        width: 100vw;
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .information-image img {
+        display: none;
+    }
+
+    .information-image {
+        height: 40rem;
+        width: 200rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../assets/images/only-picture-info-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .form-contact button {
+        height: 3rem;
+        font-size: 2rem;
+    }
+
+    .user-terms input {
+        margin-top: 0.5rem;
+    }
+
+    .user-terms label {
+        font-size: 1.5rem;
+    }
+
+    .form-contact textarea::placeholder {
+        font-size: 1.5rem;
+    }
 }
