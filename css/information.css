@@ -22,11 +22,19 @@ body {
     overflow-x: hidden;
 }
 
+header {
+    z-index: 20;
+}
+
 h1 {
     color: var(--secondary);
     display: flex;
     justify-content: center;
     font-size: 2rem;
+}
+
+#burgerMenu :nth-child(5) {
+    text-decoration: underline;
 }
 
 footer li:hover {
@@ -49,10 +57,15 @@ footer a:hover {
 }
 
 #OSM-map {
-    z-index: -1;
+    z-index: 10;
 }
 
 .welcome-information p, .welcome-information h4 {
+    color: var(--secondary);
+    margin: 1rem;
+}
+
+.contact-information p, .contact-information h4 {
     color: var(--secondary);
     margin: 1rem;
 }
@@ -66,6 +79,7 @@ footer a:hover {
     display: flex;
     margin-left: 1rem;
     gap: 1rem;
+    color: var(--secondary);
 }
 
 .contact-us p, .contact-us h4 {
@@ -136,6 +150,10 @@ footer a:hover {
     font-size: 1rem;
     padding-top: 0.3rem;
     color: var(--secondary);
+}
+
+textarea:focus {
+    border-color: var(--secondary);
 }
 
 /* Medium (m) */

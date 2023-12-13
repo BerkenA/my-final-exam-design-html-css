@@ -29,6 +29,10 @@ h1 {
     justify-content: center;
 }
 
+#burgerMenu li:nth-child(1) {
+    text-decoration: underline;
+}
+
 footer li:hover {
     color: #FBC117;
 }
@@ -239,6 +243,10 @@ footer a:hover {
 
 .rating-card {
     margin-top: 1.5rem;
+}
+
+.google-rating {
+    padding-top: 1rem;
 }
 
 .google-rating p, .google-review p {
@@ -614,6 +622,10 @@ footer a:hover {
 
     .get-guide {
         color: var(--reviews);
+    }
+
+    .google-rating {
+        padding-top: 0;
     }
 
     .google-review p {

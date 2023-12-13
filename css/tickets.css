@@ -29,6 +29,10 @@ h1 {
     font-size: 2rem;
 }
 
+#burgerMenu :nth-child(4) {
+    text-decoration: underline;
+}
+
 footer li:hover {
     color: #FBC117;
 }
