@@ -20,12 +20,25 @@ body {
     font-size: 1.5rem;
     overflow-y: scroll;
     overflow-x: hidden;
+    position: relative;
 }
 
 h1 {
     color: var(--secondary);
     display: flex;
     justify-content: center;
+}
+
+#burgerMenu {
+    width: 100vw;
+    position: absolute;
+    background-color: var(--quadratory);
+    top: 6.438rem;
+    display: none;
+}
+
+.fa-xmark {
+    display: none;
 }
 
 footer li:hover {
@@ -506,6 +519,9 @@ footer a:hover {
         font-size: 4rem;
     }
 
+    .menu-hide {
+        display: none;
+    }
 
     .main-image img {
         display: none;

@@ -18,6 +18,36 @@
 <body>
     <header>
         <nav>
+                    <!-- my burger-menu -->
+                        <div id="burgerMenu">
+                            <ul>
+                                <li>
+                                    <a href="index.html" aria-label="click here to go home">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="events.html" aria-label="click here to go to events">
+                                        Events
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="school-trips.html" aria-label="click here to go to school-trips">
+                                        School trips
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tickets.html" aria-label="click here to go to tickets">
+                                        Tickets
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="information.html" aria-label="click here for more information">
+                                        Info
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
             <!-- My logo and language -->
             <div class="logo-science">
@@ -62,10 +92,9 @@
                         <i class="fa-solid fa-ticket fa-2xl" style="color: #fbc117;"></i>
                     </a>
                 </div>
-                <div class="menu-hide">
-                    <a href="" aria-label="click here to open the menu">
-                        <i class="fa-solid fa-bars fa-2xl" style="color: #FBC117;"></i>
-                    </a>
+                <div class="menu-hide" id="burgerOpen" aria-label="click here to open the menu">
+                        <i class="fa-solid fa-bars fa-2xl" style="color: #FBC117;" id="burgerOpenIcon"></i>
+                        <i class="fa-solid fa-xmark fa-2xl" id="burgerCloseIcon" style="color: #fbc117;"></i>
                 </div>
             </div>
             
@@ -214,5 +243,7 @@
         </section>
         
     </footer>
+    <script src="js/main.js">
+    </script>
 </body>
 </html>
