@@ -48,6 +48,10 @@ footer a:hover {
     text-decoration-style: bold;
 }
 
+#OSM-map {
+    z-index: -1;
+}
+
 .welcome-information p, .welcome-information h4 {
     color: var(--secondary);
     margin: 1rem;
