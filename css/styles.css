@@ -29,18 +29,6 @@ h1 {
     justify-content: center;
 }
 
-#burgerMenu {
-    width: 100vw;
-    position: absolute;
-    background-color: var(--quadratory);
-    top: 6.438rem;
-    display: none;
-}
-
-.fa-xmark {
-    display: none;
-}
-
 footer li:hover {
     color: #FBC117;
 }
@@ -517,10 +505,6 @@ footer a:hover {
 
     h1 {
         font-size: 4rem;
-    }
-
-    .menu-hide {
-        display: none;
     }
 
     .main-image img {

@@ -25,6 +25,17 @@ body {
     background-color: var(--quadratory);
     top: 6.438rem;
     display: none;
+    padding-left: 1rem;
+}
+
+#burgerMenu li {
+    padding: 1rem 0;
+    list-style-type: none;
+}
+
+#burgerMenu a {
+    color: var(--secondary);
+    text-decoration: none;
 }
 
 .fa-xmark {
@@ -43,10 +54,6 @@ nav {
     align-items: center;
     width: 100%;
     background-color: var(--secondary);
-}
-
-a {
-    color: #FBC117;
 }
 
 .logo-science img {
