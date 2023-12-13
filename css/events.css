@@ -34,6 +34,7 @@ h4, p {
 
 #burgerMenu :nth-child(2) {
     text-decoration: underline;
+    text-decoration-color: var(--secondary);
 }
 
 footer li:hover {
