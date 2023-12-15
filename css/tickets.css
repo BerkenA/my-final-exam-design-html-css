@@ -152,27 +152,6 @@ footer a:hover {
     color: var(--tertiary);
 }
 
-.calender-type input[type="date"]::-webkit-calendar-picker-indicator {
-    background-image: url(../assets/images/logos/calendar-days-regular.svg);
-    display: block;
-    width: 1.25rem;
-    height: 1.25rem;
-}
-
-input[type="date"]::-moz-calendar-picker-indicator {
-    background-image: url(../assets/images/logos/calendar-days-regular.svg);
-    display: block;
-    width: 1.25rem;
-    height: 1.25rem;
-}
-
-input[type="date"]::-o-calendar-picker-indicator {
-    background-image: url(../assets/images/logos/calendar-days-regular.svg);
-    display: block;
-    width: 1.25rem;
-    height: 1.25rem;
-}
-
 .second-ticket {
     display: flex;
     justify-content: center;
