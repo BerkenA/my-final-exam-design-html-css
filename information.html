@@ -1,223 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="science musem for kids, family fun, educational fun, information, young explorers pass">
-    <meta name="keywords" content="science, museum, fun, children, play, educate, family, enjoy, events, robotics, tickets, information, about us, contact us, location">
+    <meta
+      name="description"
+      content="science musem for kids, family fun, educational fun, information, young explorers pass">
+    <meta
+      name="keywords"
+      content="science, museum, fun, children, play, educate, family, enjoy, events, robotics, tickets, information, about us, contact us, location">
     <meta name="author" content="berken ates">
     <title>::: Information :::</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c2d4bd022b.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/c2d4bd022b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <link rel="stylesheet" type="text/css" href="css/information.css">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <!-- My logo and language -->
-            <div class="logo-science">
-                <a href="index.html" aria-label="click here to get to home page">
-                    <img src="assets/images/science-museum-high-resolution-logo.png" alt="science museum logo"/>
-                </a>
-            </div>
+      <nav>
+        <!-- my burger-menu -->
+        <div id="burgerMenu">
+          <ul>
+            <li>
+              <a href="index.html" aria-label="click here to go home"> Home </a>
+            </li>
+            <li>
+              <a href="events.html" aria-label="click here to go to events">
+                Events
+              </a>
+            </li>
+            <li>
+              <a
+                href="school-trips.html"
+                aria-label="click here to go to school-trips"
+              >
+                School trips
+              </a>
+            </li>
+            <li>
+              <a href="tickets.html" aria-label="click here to go to tickets">
+                Tickets
+              </a>
+            </li>
+            <li>
+              <a
+                href="information.html"
+                aria-label="click here for more information"
+              >
+                Info
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- My logo and language -->
+        <div class="logo-science">
+          <a href="index.html" aria-label="click here to get to home page">
+            <img
+              src="assets/images/science-museum-high-resolution-logo.png"
+              alt="science museum logo">
+          </a>
+        </div>
 
-            <!-- My menu for desktop -->
-            <ul class="desktop-menu">
-                <li>
-                    <a href="index.html" aria-label="click here to get to the home page">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="events.html" aria-label="click here to get to the events page">
-                        Events
-                    </a>
-                </li>
-                <li>
-                    <a href="school-trips.html" aria-label="click here to get to the school trips page">
-                        School trips
-                    </a>
-                </li>
-                <li>
-                    <a href="tickets.html" aria-label="click here to get to the tickets page">
-                        Tickets
-                    </a>
-                </li>
-                <li>
-                    <a href="information.html" aria-label="click here to get to the information page">
-                        Info
-                    </a>
-                </li>
-            </ul>
+        <!-- My menu for desktop -->
+        <ul class="desktop-menu">
+          <li>
+            <a
+              href="index.html"
+              aria-label="click here to get to the home page"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="events.html"
+              aria-label="click here to get to the events page"
+            >
+              Events
+            </a>
+          </li>
+          <li>
+            <a
+              href="school-trips.html"
+              aria-label="click here to get to the school trips page"
+            >
+              School trips
+            </a>
+          </li>
+          <li>
+            <a
+              href="tickets.html"
+              aria-label="click here to get to the tickets page"
+            >
+              Tickets
+            </a>
+          </li>
+          <li>
+            <a
+              href="information.html"
+              aria-label="click here to get to the information page"
+            >
+              Info
+            </a>
+          </li>
+        </ul>
 
-            <!-- Logos for tickets and mobile/tablet menu -->
-            <div class="navbar-icons">
-                <div class="ticket-logo">
-                    <a href="tickets.html" aria-label="go to tickets page">
-                        <i class="fa-solid fa-ticket fa-2xl" style="color: #fbc117;"></i>
-                    </a>
-                </div>
-                <div class="menu-hide">
-                    <a href="" aria-label="click here to open the menu">
-                        <i class="fa-solid fa-bars fa-2xl" style="color: #FBC117;"></i>
-                    </a>
-                </div>
-            </div>
-        </nav>
+        <!-- Logos for tickets and mobile/tablet menu -->
+        <div class="navbar-icons">
+          <div class="ticket-logo">
+            <a href="tickets.html" aria-label="go to tickets page">
+              <i class="fa-solid fa-ticket fa-2xl" style="color: #fbc117"></i>
+            </a>
+          </div>
+          <div
+            class="menu-hide"
+            id="burgerOpen"
+            aria-label="click here to open the menu"
+          >
+            <i
+              class="fa-solid fa-bars fa-2xl"
+              style="color: #fbc117"
+              id="burgerOpenIcon"
+            ></i>
+            <i
+              class="fa-solid fa-xmark fa-2xl"
+              id="burgerCloseIcon"
+              style="color: #fbc117"
+            ></i>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- This is my top part of the page with general and contact info -->
-        <div class="information-image">
-            <img src="assets/images/only-picture-information.png" alt="a beatifull science museum">
+      <!-- This is my top part of the page with general and contact info -->
+      <div class="information-image">
+        <img
+          src="assets/images/only-picture-information.png"
+          alt="a beatifull science museum"
+>
+      </div>
+      <h1>Information</h1>
+      <div class="welcome-information">
+        <h4>
+          Welcome to Science Museum, a vibrant science museum for kids in the
+          heart of the city!
+        </h4>
+        <p>
+          Nestled in the heart of the city, our museum is a vibrant hub of
+          exploration, captivating visitors of all ages. Step into a world where
+          interactive exhibits bring science to life, from the marvels of
+          physics and chemistry to the mysteries of space and time. Engage young
+          minds with hands-on workshops, interactive demonstrations, and
+          immersive displays that spark a love for discovery. With a commitment
+          to education and entertainment, Science Museum is not just a
+          museum—it's a gateway to the wonders of science, inspiring generations
+          to explore and learn.
+        </p>
+        <h4>location!</h4>
+      </div>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+      <link rel="stylesheet" href="/css/Leaflet.BigImage.css">
+      <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+      <script src="/js/Leaflet.BigImage.js"></script>
+      
+      <div id="OSM-map" style="height: 500px;"></div>
+      <script type="text/javascript">var map;
+      var marker = [];
+      var mapOptions = {
+          scrollWheelZoom: false,
+      };
+      
+      var id = 'OSM-map';
+      
+      var centerLatLng = [59.92933428058327, 10.755733885295648];
+      map = L.map(id, mapOptions).setView(centerLatLng, 15);
+      
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: 'generated with <a href="https://www.osm-generator.com/">osm-generator.com</a> - &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+      
+      
+      marker = L.marker(
+          L.latLng(59.92985036042926, 10.756159675553661), {});
+      marker.addTo(map);
+      
+      
+      L.control.bigImage({
+          position: 'topright'
+      }).addTo(map);
+      
+      </script>
+        <div class="contact-information">
+      <h4>Contact us!</h4>
+      <p>
+        Connect with Science Museum on our contact Us page – your gateway to
+        questions, information, and inquiries.
+      </p>
         </div>
-        <h1>
-            Information
-        </h1>
-        <div class="welcome-information">
-            <h4>
-                Welcome to Science Museum, a vibrant science museum for kids in the heart of the city!
-            </h4>
-            <p>
-                Nestled in the heart of the city, our museum is a vibrant hub of exploration, captivating visitors of   all ages.
-                Step into a world where interactive exhibits bring science to life, from the marvels of physics and chemistry to the mysteries of space and time.
-                
-                Engage young minds with hands-on workshops, interactive demonstrations, and immersive displays that spark a love for discovery. With a commitment to education and entertainment, Science Museum is not just a museum—it's a gateway to the wonders of science, inspiring generations to explore and learn.
-            </p>
-            <h4>
-                Contact us!
-            </h4>
-            <p>
-                Connect with Science Museum on our contact Us page – your gateway to questions, information, and inquiries.
-            </p>
-            <div class="contact-us">
-                <h4>
-                    Phone:
-                </h4>
-                <p>
-                    +47 20 00 00 00
-                </p>
-            </div>
-            <div class="contact-us">
-                <h4>
-                    Email:
-                </h4>
-                <p>
-                    science@musem.info.no
-                </p>
-            </div>
-            <div class="contact-us">
-                <h4>
-                    Adress:
-                </h4>
-                <p>
-                    Mølleparken 4,  0459, Oslo
-                </p>
-            </div>
+      <div class="contact-us">
+        <h4>Phone:</h4>
+        <p>+47 20 00 00 00</p>
+      </div>
+      <div class="contact-us">
+        <h4>Email:</h4>
+        <p>science@musem.info.no</p>
+      </div>
+      <div class="contact-us">
+        <h4>Adress:</h4>
+        <p>Mølleparken 4, 0459, Oslo</p>
+      </div>
 
-            <!-- This is my contact form -->
-            <form class="form-contact">
-                <textarea name="name" id="name" placeholder="Name*"></textarea>
-                <label for="name" >
-                </label>
+      <!-- This is my contact form -->
+      <form class="form-contact">
+        <textarea name="name" id="name" placeholder="Name*"></textarea>
+        <label for="name"> </label>
 
-                <textarea name="email" id="email" placeholder="Email*"></textarea>
-                <label for="email">
-                </label>
+        <textarea name="email" id="email" placeholder="Email*"></textarea>
+        <label for="email"> </label>
 
-                <textarea name="tel" id="phone" placeholder="Phone*"></textarea>
-                <label for="phone">
-                </label>
+        <textarea name="tel" id="phone" placeholder="Phone*"></textarea>
+        <label for="phone"> </label>
 
-                <textarea name="text" id="text" placeholder="What is your inquiry about?*"></textarea>
-                <label for="text">
-                </label>
+        <textarea
+          name="text"
+          id="text"
+          placeholder="What is your inquiry about?*"
+        ></textarea>
+        <label for="text"> </label>
 
-                <textarea name="text" id="help" placeholder="What can we help you with?*"></textarea>
-                <label for="text">
-                </label>
+        <textarea
+          name="text"
+          id="help"
+          placeholder="What can we help you with?*"
+        ></textarea>
+        <label for="text"> </label>
 
-                <div class="user-terms">
-                    <input type="checkbox">
-                    <label>I accept the user terms</label>
-                </div>
-                <button>
-                    Submit!
-                </button>
-            </form>
+        <div class="user-terms">
+          <input type="checkbox">
+          <label>I accept the user terms</label>
+        </div>
+        <button>Submit!</button>
+      </form>
     </main>
 
     <footer>
-        <!-- This is my top footer -->
-        <section>
-            <div class="menu-sections">
-                <ul class="top-footer">
-                    <li>
-                        Visit
-                    </li>
-                    <li>
-                        <a href="tickets.html" aria-label="click here to get to the tickets page">
-                            Tickets
-                        </a>
-                    </li>
-                    <li>
-                        <a href="school-trips.html" aria-label="click here to get to the school trips page">
-                            School trips
-                        </a>
-                    </li>
-                </ul>
-                <ul class="middle-footer">
-                    <li>
-                        Adventure
-                    </li>
-                    <li>
-                        <a href="events.html" aria-label="click here to get to the events page">
-                            Featured events
-                        </a>
-                    </li>
-                    <li>
-                        Robotics
-                    </li>
-                </ul>
-                <ul class="last-footer">
-                    <li>
-                        About us
-                    </li>
-                    <li>
-                        <a href="information.html" aria-label="Click here to get to the information page">
-                            Information
-                        </a>
-                    </li>
-                    <li>
-                        Press
-                    </li>
-                </ul>
-            </div>
-        </section>
+      <!-- This is my top footer -->
+      <section>
+        <div class="menu-sections">
+          <ul class="top-footer">
+            <li>Visit</li>
+            <li>
+              <a
+                href="tickets.html"
+                aria-label="click here to get to the tickets page"
+              >
+                Tickets
+              </a>
+            </li>
+            <li>
+              <a
+                href="school-trips.html"
+                aria-label="click here to get to the school trips page"
+              >
+                School trips
+              </a>
+            </li>
+          </ul>
+          <ul class="middle-footer">
+            <li>Adventure</li>
+            <li>
+              <a
+                href="events.html"
+                aria-label="click here to get to the events page"
+              >
+                Featured events
+              </a>
+            </li>
+            <li>Robotics</li>
+          </ul>
+          <ul class="last-footer">
+            <li>About us</li>
+            <li>
+              <a
+                href="information.html"
+                aria-label="Click here to get to the information page"
+              >
+                Information
+              </a>
+            </li>
+            <li>Press</li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- This is my bottom footer -->
-        <section>
-            <div class="section-bottom">
-                <a href="index.html" aria-label="">
-                    <img src="assets/images/science-museum-high-resolution-logo.png" alt="science museum logo">
-                </a>
-                <ul class="bottom-footer">
-                    <li>
-                        Cookies
-                    </li>
-                    <li>
-                        Jobs
-                    </li>
-                    <li>
-                        <a href="information.html" aria-label="click here to contact us">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+      <!-- This is my bottom footer -->
+      <section>
+        <div class="section-bottom">
+          <a href="index.html" aria-label="">
+            <img
+              src="assets/images/science-museum-high-resolution-logo.png"
+              alt="science museum logo">
+          </a>
+          <ul class="bottom-footer">
+            <li>Cookies</li>
+            <li>Jobs</li>
+            <li>
+              <a href="information.html" aria-label="click here to contact us"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </footer>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

@@ -20,12 +20,18 @@ body {
     font-size: 1.5rem;
     overflow-y: scroll;
     overflow-x: hidden;
+    position: relative;
 }
 
 h1 {
     color: var(--secondary);
     display: flex;
     justify-content: center;
+}
+
+#burgerMenu li:nth-child(1) {
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
 }
 
 footer li:hover {
@@ -238,6 +244,10 @@ footer a:hover {
 
 .rating-card {
     margin-top: 1.5rem;
+}
+
+.google-rating {
+    padding-top: 1rem;
 }
 
 .google-rating p, .google-review p {
@@ -506,7 +516,6 @@ footer a:hover {
         font-size: 4rem;
     }
 
-
     .main-image img {
         display: none;
     }
@@ -614,6 +623,10 @@ footer a:hover {
 
     .get-guide {
         color: var(--reviews);
+    }
+
+    .google-rating {
+        padding-top: 0;
     }
 
     .google-review p {

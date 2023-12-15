@@ -22,11 +22,20 @@ body {
     overflow-x: hidden;
 }
 
+header {
+    z-index: 20;
+}
+
 h1 {
     color: var(--secondary);
     display: flex;
     justify-content: center;
     font-size: 2rem;
+}
+
+#burgerMenu :nth-child(5) {
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
 }
 
 footer li:hover {
@@ -48,7 +57,16 @@ footer a:hover {
     text-decoration-style: bold;
 }
 
+#OSM-map {
+    z-index: 10;
+}
+
 .welcome-information p, .welcome-information h4 {
+    color: var(--secondary);
+    margin: 1rem;
+}
+
+.contact-information p, .contact-information h4 {
     color: var(--secondary);
     margin: 1rem;
 }
@@ -62,6 +80,7 @@ footer a:hover {
     display: flex;
     margin-left: 1rem;
     gap: 1rem;
+    color: var(--secondary);
 }
 
 .contact-us p, .contact-us h4 {
@@ -178,6 +197,10 @@ footer a:hover {
         font-size: 4rem;
     }
 
+    h4, p {
+        font-size: 2rem;
+    }
+
     .information-image img {
         display: none;
     }
@@ -194,7 +217,7 @@ footer a:hover {
     }
 
     .form-contact button {
-        height: 3rem;
+        height: 4rem;
         font-size: 2rem;
     }
 

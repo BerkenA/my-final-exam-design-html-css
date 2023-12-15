@@ -1,68 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c2d4bd022b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
-</head>
-    <body>
-        <header>
-            <nav>
-                <!-- My logo and language -->
-                <div class="logo-science">
-                    <a href="index.html" aria-label="click here to get to home page">
-                        <img src="assets/images/science-museum-high-resolution-logo.png" alt="science museum logo"/>
-                    </a>
-                </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c2d4bd022b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- my burger-menu -->
+        <div id="burgerMenu">
+          <ul>
+            <li>
+              <a href="index.html" aria-label="click here to go home"> Home </a>
+            </li>
+            <li>
+              <a href="events.html" aria-label="click here to go to events">
+                Events
+              </a>
+            </li>
+            <li>
+              <a
+                href="school-trips.html"
+                aria-label="click here to go to school-trips"
+              >
+                School trips
+              </a>
+            </li>
+            <li>
+              <a href="tickets.html" aria-label="click here to go to tickets">
+                Tickets
+              </a>
+            </li>
+            <li>
+              <a
+                href="information.html"
+                aria-label="click here for more information"
+              >
+                Info
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- My logo and language -->
+        <div class="logo-science">
+          <a href="index.html" aria-label="click here to get to home page">
+            <img
+              src="assets/images/science-museum-high-resolution-logo.png"
+              alt="science museum logo"
+            />
+          </a>
+        </div>
 
-                <!-- My menu for desktop -->
-                <ul class="desktop-menu">
-                    <li>
-                        <a href="index.html" aria-label="click here to get to the home page">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="events.html" aria-label="click here to get to the events page">
-                            Events
-                        </a>
-                    </li>
-                    <li>
-                        <a href="school-trips.html" aria-label="click here to get to the school trips page">
-                            School trips
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tickets.html" aria-label="click here to get to the tickets page">
-                            Tickets
-                        </a>
-                    </li>
-                    <li>
-                        <a href="information.html" aria-label="click here to get to the information page">
-                            Info
-                        </a>
-                    </li>
-                </ul>
-    
-                <!-- Logos for tickets and mobile/tablet menu -->
-                <div class="navbar-icons">
-                    <div class="ticket-logo">
-                        <a href="tickets.html" aria-label="go to tickets page">
-                            <i class="fa-solid fa-ticket fa-2xl" style="color: #fbc117;"></i>
-                        </a>
-                    </div>
-                    <div class="menu-hide">
-                        <a href="" aria-label="click here to open the menu">
-                            <i class="fa-solid fa-bars fa-2xl" style="color: #FBC117;"></i>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-        </header>
-    </body>
+        <!-- My menu for desktop -->
+        <ul class="desktop-menu">
+          <li>
+            <a
+              href="index.html"
+              aria-label="click here to get to the home page"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="events.html"
+              aria-label="click here to get to the events page"
+            >
+              Events
+            </a>
+          </li>
+          <li>
+            <a
+              href="school-trips.html"
+              aria-label="click here to get to the school trips page"
+            >
+              School trips
+            </a>
+          </li>
+          <li>
+            <a
+              href="tickets.html"
+              aria-label="click here to get to the tickets page"
+            >
+              Tickets
+            </a>
+          </li>
+          <li>
+            <a
+              href="information.html"
+              aria-label="click here to get to the information page"
+            >
+              Info
+            </a>
+          </li>
+        </ul>
+
+        <!-- Logos for tickets and mobile/tablet menu -->
+        <div class="navbar-icons">
+          <div class="ticket-logo">
+            <a href="tickets.html" aria-label="go to tickets page">
+              <i class="fa-solid fa-ticket fa-2xl" style="color: #fbc117"></i>
+            </a>
+          </div>
+          <div class="menu-hide">
+            <a href="" aria-label="click here to open the menu">
+              <i class="fa-solid fa-bars fa-2xl" style="color: #fbc117"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>

@@ -19,6 +19,29 @@ body {
     width: 100vw;
 }
 
+#burgerMenu {
+    width: 100vw;
+    position: absolute;
+    background-color: var(--quadratory);
+    top: 6.438rem;
+    display: none;
+    padding-left: 1rem;
+}
+
+#burgerMenu li {
+    padding: 1rem 0;
+    list-style-type: none;
+}
+
+#burgerMenu a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.fa-xmark {
+    display: none;
+}
+
 header {
     position: sticky;
     top: 0;
@@ -33,17 +56,6 @@ nav {
     background-color: var(--secondary);
 }
 
-a {
-    color: #FBC117;
-}
-
-.language-en {
-    margin: 0 1rem 0 3rem; 
-    color: var(--menu);
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 .logo-science img {
     width: 10.625rem;
     height: 6rem;
@@ -56,9 +68,9 @@ a {
 
 .navbar-icons {
     display: flex;
-    margin: 0 1rem 0 3rem;
     gap: 2rem;
     align-items: center;
+    padding-right: 1rem;
 }
 
 .ticket-logo {
@@ -79,7 +91,7 @@ a {
 }
 
 .menu-hide {
-    margin-right: 1rem;
+    width: 3rem;
 }
 
 /* Medium (m) */
@@ -98,8 +110,8 @@ a {
     }
 
     .navbar-icons {
-        margin: 0 2rem 0 10rem;
-        gap: 2rem;
+        display: flex;
+        gap: 4rem;
     }
 }
 
@@ -125,6 +137,10 @@ a {
         text-decoration: none;
         color: var(--menu);
         font-family: 'Jost', sans-serif;
+    }
+
+    .menu-hide {
+        display: none;
     }
 
     .desktop-menu {

@@ -32,6 +32,11 @@ h4, p {
     color: var(--secondary);
 }
 
+#burgerMenu :nth-child(3) {
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
+}
+
 footer li:hover {
     color: #FBC117;
 }
