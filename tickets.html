@@ -54,7 +54,7 @@
             <!-- My logo and language -->
             <div class="logo-science">
                 <a href="index.html" aria-label="click here to get to home page">
-                    <img src="assets/images/science-museum-high-resolution-logo.png" alt="science museum logo"/>
+                    <img src="assets/images/science-museum-high-resolution-logo.png" alt="science museum logo">
                 </a>
             </div>
 
@@ -136,8 +136,8 @@
                     <form class="ticket-form" action="booking-success.html" aria-label="young explorers pass booking form">
                         <div class="form-group">
                             <label for="price"></label>
-                            <input type="text" id="price" name="price" placeholder="500 NOK,-">
-                            <label for="tickets"></label>
+                            <input type="text" id="price" name="price" disabled placeholder="500 NOK,-">
+                            <label for="tickets" id="buy"></label>
                             <select>
                                 <option value="1">
                                     1
@@ -176,12 +176,12 @@
                         <input type="text" id="name" name="name" placeholder="Name*">
                 
                         <label for="phone"></label>
-                        <input type="phone" id="phone" name="phone" placeholder="Phone*">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone*">
                 
                         <label for="date"></label>
                         <input type="date" id="date" name="date">
                 
-                        <button type="submit" aria-label="book now for young explorers pass">
+                        <button type="submit" aria-label="book now!">
                             Book now!
                         </button>
                     </form>
@@ -200,8 +200,8 @@
                     <form class="second-form" aria-label="adventure workshop booking form" action="booking-success.html">
                         <div class="form-group">
                             <label for="price"></label>
-                            <input type="text" id="price" name="price" placeholder="350 NOK,-">
-                            <label for="tickets"></label>
+                            <input type="text" disabled id="price" name="price" placeholder="350 NOK,-">
+                            <label for="tickets" id="ticket"></label>
                             <select>
                                 <option value="1">
                                     1
@@ -237,15 +237,15 @@
                         </div>
                 
                         <label for="name"></label>
-                        <input type="text" id="name" name="name" placeholder="Name*">
+                        <input type="text" id="your-info" name="name" placeholder="Name*">
                 
                         <label for="phone"></label>
-                        <input type="phone" id="phone" name="phone" placeholder="Phone*">
+                        <input type="tel" id="phones" name="phone" placeholder="Phone*">
                 
                         <label for="date"></label>
                         <input type="date" id="date" name="date">
                 
-                        <button type="submit" aria-label="book now for adventure workshop" aria-label="click here to book your tickets">
+                        <button type="submit" aria-label="book now!">
                             Book now!
                         </button>
                     </form>

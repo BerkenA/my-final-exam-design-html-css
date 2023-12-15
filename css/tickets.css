@@ -293,7 +293,7 @@ input[type="date"]::-o-calendar-picker-indicator {
         width: 300rem;
         max-width: 100%;
         max-height: 100%;
-        background-image: url(../assets/images/tickets-main-picture.svg);
+        background-image: url(../assets/images/first-picture-tickets.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -309,7 +309,7 @@ input[type="date"]::-o-calendar-picker-indicator {
     }
 
     .ticket-picture img {
-        background-image: url(../assets/images/main-picture-home-tickets.svg);
+        background-image: url(../assets/images/second-picture-tickets.jpg);
         width: 85%;
         max-width: 100%;
         max-height: 100%;
