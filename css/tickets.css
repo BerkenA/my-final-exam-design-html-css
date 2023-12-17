@@ -254,11 +254,11 @@ input[type="date"]::-o-calendar-picker-indicator {
 /* X-tra small */
 @media (min-width: 350px) {
     .ticket-picture {
-        width: 86%;
+        width: 90%;
     }
     
     .second-picture {
-        width: 86%;
+        width: 90%;
     }
 }
 
