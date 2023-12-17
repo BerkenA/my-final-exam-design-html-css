@@ -30,6 +30,10 @@ footer a:hover {
     color: var(--menu);
 }
 
+#burgerMenu {
+    border-bottom: 1px solid var(--secondary);
+}
+
 .desktop-menu a:hover {
     color: var(--tertiary);
 }
@@ -54,6 +58,10 @@ footer a:hover {
 
 .order-confirm h3 {
     padding-bottom: 3.5rem;
+}
+
+.order-confirm a {
+    text-decoration: none;
 }
 
 .center-this {
