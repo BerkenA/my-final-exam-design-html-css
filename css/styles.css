@@ -696,3 +696,8 @@ footer a:hover {
     }
 }
 
+@media (min-width: 1694px) {
+    .keep-this button {
+        margin-top: 6rem;
+    }
+}

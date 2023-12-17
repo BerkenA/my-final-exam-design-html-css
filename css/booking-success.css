@@ -30,6 +30,10 @@ footer a:hover {
     color: var(--menu);
 }
 
+#burgerMenu {
+    border-bottom: 1px solid var(--secondary);
+}
+
 .desktop-menu a:hover {
     color: var(--tertiary);
 }
@@ -56,7 +60,23 @@ footer a:hover {
     padding-bottom: 3.5rem;
 }
 
-.order-confirm button {
+.order-confirm a {
+    text-decoration: none;
+}
+
+.center-this {
+    width: 18.75rem;
+    height: 3.25rem;
+}
+
+.flex-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.go-home {
+    display: flex;
     width: 18.75rem;
     height: 3.25rem;
     background-color: var(--tertiary);
@@ -65,4 +85,6 @@ footer a:hover {
     font-size: 1.625rem;
     font-weight: bold;
     border-radius: 0.625rem;
+    align-items: center;
+    justify-content: center;
 }
