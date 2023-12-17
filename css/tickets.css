@@ -251,6 +251,17 @@ input[type="date"]::-o-calendar-picker-indicator {
     height: 1.25rem;
 }
 
+/* X-tra small */
+@media (min-width: 350px) {
+    .ticket-picture {
+        width: 86%;
+    }
+    
+    .second-picture {
+        width: 86%;
+    }
+}
+
 /* Medium (m) */
 @media (min-width: 744px) {
     /* Your styles for the medium breakpoint here */
