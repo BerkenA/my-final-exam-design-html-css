@@ -34,14 +34,6 @@ h1 {
     text-decoration-color: var(--secondary);
 }
 
-footer li:hover {
-    color: #FBC117;
-}
-
-footer a:hover {
-    color: var(--menu);
-}
-
 .desktop-menu a:hover {
     color: var(--tertiary);
 }
@@ -378,6 +370,14 @@ footer a:hover {
 
 .side-picture {
     display: none;
+}
+
+footer li:hover {
+    color: #FBC117;
+}
+
+footer a:hover {
+    color: var(--menu);
 }
 
 /* Medium (m) */

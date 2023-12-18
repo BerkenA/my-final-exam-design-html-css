@@ -34,14 +34,6 @@ h1 {
     text-decoration-color: var(--secondary);
 }
 
-footer li:hover {
-    color: #FBC117;
-}
-
-footer a:hover {
-    color: var(--menu);
-}
-
 .desktop-menu a:hover {
     color: var(--tertiary);
 }
@@ -249,6 +241,14 @@ input[type="date"]::-o-calendar-picker-indicator {
     display: block;
     width: 1.25rem;
     height: 1.25rem;
+}
+
+footer li:hover {
+    color: #FBC117;
+}
+
+footer a:hover {
+    color: var(--menu);
 }
 
 /* X-tra small */

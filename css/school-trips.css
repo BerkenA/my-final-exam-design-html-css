@@ -37,14 +37,6 @@ h4, p {
     text-decoration-color: var(--secondary);
 }
 
-footer li:hover {
-    color: #FBC117;
-}
-
-footer a:hover {
-    color: var(--menu);
-}
-
 .desktop-menu a:hover {
     color: var(--tertiary);
 }
@@ -126,6 +118,14 @@ footer a:hover {
 .third-buy button {
     margin: 2rem;
     margin-bottom: 5rem;
+}
+
+footer li:hover {
+    color: #FBC117;
+}
+
+footer a:hover {
+    color: var(--menu);
 }
 
 /* Medium (m) */

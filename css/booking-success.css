@@ -22,14 +22,6 @@ body {
     overflow-x: hidden;
 }
 
-footer li:hover {
-    color: #FBC117;
-}
-
-footer a:hover {
-    color: var(--menu);
-}
-
 #burgerMenu {
     border-bottom: 1px solid var(--secondary);
 }
@@ -87,4 +79,12 @@ footer a:hover {
     border-radius: 0.625rem;
     align-items: center;
     justify-content: center;
+}
+
+footer li:hover {
+    color: #FBC117;
+}
+
+footer a:hover {
+    color: var(--menu);
 }
