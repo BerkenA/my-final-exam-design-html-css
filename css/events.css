@@ -53,7 +53,7 @@ footer a:hover {
     text-decoration: underline;
     color: var(--menu);
     text-underline-offset: 0.5rem;
-    text-decoration-style: bold;
+    font-weight: bold;
 }
 
 .main-event img {
